@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Actualización</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h1>Actualizar Información</h1>
+    <p>Actualiza tu Información con el siguiente formulario</p>
+
+    <form>
+        <label for="firstName">Nombres:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Ingresa tu nombre">
+
+        <label for="lastName">Apellidos:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Ingresa tu apellido">
+
+        <label for="favoriteSport">Deporte favorito:</label>
+        <select id="favoriteSport" name="favoriteSport">
+            <option value="">Elige una opción</option>
+            <option value="basketball">basketball</option>
+            <option value="football">Futbol</option>
+            <option value="soccer">Volleyball</option>
+            <option value="baseball">Baseball</option>
+            <option value="Natacion">Natacion</option>
+        </select>
+
+        <label>Género:</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Masculino</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Femenino</label>
+            
+        </div>
+
+        <label for="stateResident">Estado de residencia:</label>
+        <select id="stateResident" name="stateResident">
+            <option value="">Selecciona tu estado</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="Escuintla">Escuintla</option>
+            <option value="Jutiapa">Jutiapa</option>
+            <option value="otros">otros</option>
+        </select>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="age" name="age">
+            <label for="age">21 años o mayor</label>
+        </div>
+
+        <label>Modelos de vehículo que posee:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="ford" name="carModels" value="ford">
+            <label for="ford">Ford</label>
+            <input type="checkbox" id="chrysler" name="carModels" value="chrysler">
+            <label for="chrysler">Chrysler</label>
+            <input type="checkbox" id="toyota" name="carModels" value="toyota">
+            <label for="toyota">Toyota</label>
+            <input type="checkbox" id="nissan" name="carModels" value="nissan">
+            <label for="nissan">Nissan</label>
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Guardar Cambios</button>
+        </div>
+    </form>
+</body>
+
+</html>

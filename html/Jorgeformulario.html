@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Información</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="/css/Jorgeformulario.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">Actualizar Información</h1>
+        <p class="center-align">Usa el siguiente formulario para editar tu información.</p>
+        <form>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" id="firstName" name="firstName">
+                    <label for="firstName" class="active">Nombre:</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="text" id="lastName" name="lastName">
+                    <label for="lastName" class="active">Apellido:</label>
+                </div>
+                <div class="input-field col s12">
+                    <select id="favoriteSport" name="favoriteSport">
+                        <option value="" disabled selected>Elige tu deporte favorito</option>
+                        <option value="basketball">Baloncesto</option>
+                        <option value="soccer">Fútbol</option>
+                        <option value="baseball">Béisbol</option>
+                        <option value="tennis">Tenis</option>
+                    </select>
+                    <label for="favoriteSport">Deporte favorito:</label>
+                </div>
+                <div class="input-field col s12 center-align">
+                    <p>Género:</p>
+                    <p>
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            <span>Masculino</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            <span>Femenino</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="notSure">
+                            <span>No estoy seguro</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field col s12">
+                    <select id="stateResident" name="stateResident">
+                        <option value="" disabled selected>Elige tu Departamento </option>
+                        <option value="Alta Verapaz">Alta Verapaz</option>
+                        <option value="Baja Verapaz">Baja Verapaz</option>
+                        <option value="Chimaltenango">Chimaltenango</option>
+                        <option value="Chiquimula">	Chiquimula</option>
+                        <option value="El Progreso">El Progreso</option>
+                        <option value="Escuintla">Escuintla</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Huehuetenango">Huehuetenango</option>
+                        <option value="Izabal">Izabal</option>
+                        <option value="Jalapa">Jalapa</option>
+                        <option value="Jutiapa">Jutiapa</option>
+                        <option value="Petén">Petén</option>
+                        <option value="Quetzaltenango">Quetzaltenango</option>
+                        <option value="Quiché">Quiché</option>
+                        <option value="Retalhuleu">Retalhuleu</option>
+                        <option value="Sacatepéquez">Sacatepéquez</option>
+                        <option value="San Marcos">San Marcos</option>
+                        <option value="Santa Rosa">Santa Rosa</option>
+                        <option value="Sololá">Sololá</option>
+                        <option value="Suchitepéquez">Suchitepéquez</option>
+                        <option value="Totonicapán">Totonicapán</option>
+                        <option value="Zacapa">Zacapa</option>
+                    </select>
+                    <label for="stateResident">Departamento:</label>
+                </div>
+                <div class="input-field col s12 center-align">
+                    <p>
+                        <label>
+                            <input type="checkbox" name="age" value="21OrOlder">
+                            <span>21 o mayor</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field col s12 center-align">
+                    <p>Modelos de coche que posee:</p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="carModels" value="ford">
+                            <span>Ford</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="carModels" value="chrysler">
+                            <span>Chrysler</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="carModels" value="toyota">
+                            <span>Toyota</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="carModels" value="nissan">
+                            <span>Nissan</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field col s12">
+                    <button type="submit" class="btn green darken-1">Guardar Cambios</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+</html>

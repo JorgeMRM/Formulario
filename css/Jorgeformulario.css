@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('/img/ciberseguridad.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f2f2f2; /* Color de fondo de respaldo */
+}
+
+.container {
+    margin-top: 50px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #e0f7fa; /* Celeste claro */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+h1, p {
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.input-field label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #00796b !important;
+}
+
+input[type="text"],
+select {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    border-bottom: 1px solid #00796b;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-bottom: 1px solid #004d40;
+    box-shadow: 0 1px 0 0 #004d40;
+}
+
+input[type="radio"] + span,
+input[type="checkbox"] + span {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="radio"]:hover + span,
+input[type="checkbox"]:hover + span {
+    color: #00796b;
+    transform: scale(1.05);
+}
+
+button.btn {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4CAF50 !important;
+    font-weight: 500;
+    width: 100%;
+    animation: pulse 2s infinite;
+}
+
+button.btn:hover {
+    background-color: #45a049 !important;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 15px;
+}
+
+.center-align {
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
